@@ -1,47 +1,44 @@
-const speakerCards = document.querySelectorAll(".speaker-card");
-const speakerModal = document.querySelector(".speaker-detail-modal");
-const modalImage = document.getElementById("modalImage");
-const modalName = document.getElementById("modalName");
-const modalTitle = document.getElementById("modalTitle");
-const modalCompany = document.getElementById("modalCompany");
-const modalDescription = document.getElementById("modalDescription");
-const closeModalButton = document.querySelector(".close-modal");
+const closeBtn = document.querySelector(".speaker-modal-close");
+const speakerModal = document.querySelector(".speaker-modal");
+const speakerCard = document.querySelectorAll(".speaker-card");
+const modalName = speakerModal.querySelector(".speaker-modal-name");
+const modalPosition = speakerModal.querySelector(".speaker-modal-position");
+const modalCompany = speakerModal.querySelector(".speaker-modal-company");
+const modalImage = speakerModal.querySelector(".speaker-modal-image");
+const modalDescription = speakerModal.querySelector(".speaker-modal-bio p");
 
-// Show modal with speaker details
-function showSpeakerModal(speakerData) {
-  modalImage.src = speakerData.image;
-  modalName.textContent = speakerData.name;
-  modalTitle.textContent = speakerData.title;
-  modalCompany.textContent = speakerData.company;
-  modalDescription.textContent = speakerData.description;
-  speakerModal.classList.remove("hidden");
-}
-
-// Hide the modal
-function hideSpeakerModal() {
+closeBtn.addEventListener("click", () => {
   speakerModal.classList.add("hidden");
-}
+});
 
-// Event listener for speaker card clicks
-speakerCards.forEach((card) => {
+speakerCard.forEach((card) => {
   card.addEventListener("click", () => {
-    const speakerData = {
-      image: card.getAttribute("data-image"),
-      name: card.getAttribute("data-name"),
-      title: card.getAttribute("data-title"),
-      company: card.getAttribute("data-company"),
-      description: card.getAttribute("data-description"),
-    };
-    showSpeakerModal(speakerData);
+    const name = card.querySelector(".speaker-card-content").dataset.name;
+    const title = card.querySelector(".speaker-card-content").dataset.title;
+    const company = card.querySelector(".speaker-card-content").dataset.company;
+    const image = card.querySelector(".speaker-card-content").dataset.image;
+    const description = card.querySelector(".speaker-card-content").dataset
+      .description;
+
+    modalName.textContent = name;
+    modalPosition.textContent = title;
+    modalCompany.textContent = company;
+    modalImage.src = image;
+    modalDescription.textContent = description;
+
+    speakerModal.classList.add("customGrid");
+    speakerModal.classList.remove("hidden");
   });
 });
 
-// Event listener for close button
-closeModalButton.addEventListener("click", hideSpeakerModal);
+const leftBtn = document.querySelector(".leftBtn");
+const rightBtn = document.querySelector(".rightBtn");
+const speakersGrid = document.querySelector(".speakers-grid");
 
-// Event listener for clicking outside the modal
-window.addEventListener("click", (event) => {
-  if (event.target === speakerModal) {
-    hideSpeakerModal();
-  }
+leftBtn.addEventListener("click", () => {
+  speakersGrid.scrollBy({ left: -300, behavior: "smooth" });
+});
+
+rightBtn.addEventListener("click", () => {
+  speakersGrid.scrollBy({ left: 300, behavior: "smooth" });
 });
