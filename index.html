@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Featured Speakers</title>
+</head>
+
+<body>
+  <div class="speaker-section bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">View our Featured Speakers for the Event</h2>
+      <p class="text-xl">
+        Speakers are core contributors and industry thought leaders working at <span
+          class="text-blue-500">companies</span> that push for innovation.
+      </p>
+
+      <!-- Slider Section -->
+      <div class="speaker-slider px-10 my-8">
+        <!-- Speaker Detail Modal -->
+        <div class="speaker-detail-modal hidden flex items-start justify-center my-4">
+          <div class="bg-white w-full px-9 py-8 rounded-lg shadow-lg relative text-left">
+            <button
+              class="close-modal absolute top-4 right-4 font-semibold hover:text-gray-700 text-2xl">&times;</button>
+            <div class="customGrid">
+              <div class="flex items-center border-r-2 border-gray-200">
+                <img id="modalImage" src="./assets/img1.png" alt="Speaker Image" class="rounded-full mr-4">
+                <div>
+                  <h3 id="modalName" class="text-xl font-bold">John Doe</h3>
+                  <p id="modalTitle" class="text-lg font-semibold">Chief Marketing Officer</p>
+                  <p id="modalCompany" class="text-gray-400">Specbee</p>
+                  <div class="flex items-center gap-5 mt-2">
+                    <img src="./assets/drupal.png" alt="Drupal">
+                    <img src="./assets/twitter.png" alt="Twitter">
+                    <img src="./assets/linkedin.png" alt="LinkedIn">
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center ml-5">
+                <p id="modalDescription">
+                  Monotonectally synergize business communities rather than client-centric convergence. Assertively
+                  unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize
+                  parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business
+                  strategic theme areas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker Card -->
+        <div class="flex items-center justify-center">
+          <!-- <button class="button-left text-black bg-white p-2 rounded-full">
+            <img class="w-16" src="./assets/left.png" alt="left-button">
+          </button> -->
+          <div class="flex overflow-hidden items-center justify-center gap-4 py-10" style="margin-left: 0;">
+            <div class="speaker-card bg-white p-4 shadow-lg rounded-lg cursor-pointer" data-name="John Doe"
+              data-title="Chief Marketing Officer" data-company="Acme Corp"
+              data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
+              data-image="./assets/img1.png">
+              <img src="./assets/img1.png" alt="Speaker Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-lg font-bold">John Doe</h3>
+              <p class="text-sm font-semibold">Chief Marketing Officer</p>
+              <p class="text-sm text-gray-400">Acme Corp</p>
+            </div>
+            <!-- Repeat Speaker Cards for other speakers -->
+            <div class="speaker-card bg-white p-4 shadow-lg rounded-lg cursor-pointer" data-name="Jane Smith"
+              data-title="Chief Engagement Officer" data-company="Acquia"
+              data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare."
+              data-image="./assets/img2.png">
+              <img src="./assets/img2.png" alt="Speaker Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-lg font-bold">Jane Smith</h3>
+              <p class="text-sm font-semibold">Chief Engagement Officer</p>
+              <p class="text-sm text-gray-400">Acquia</p>
+            </div>
+            <div class="speaker-card bg-white p-4 shadow-lg rounded-lg cursor-pointer" data-name="Michael Johnson"
+              data-title="Chief Technical Developer" data-company="Pantheon"
+              data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage."
+              data-image="./assets/img3.png">
+              <img src="./assets/img3.png" alt="Speaker Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-lg font-bold">Michael Johnson</h3>
+              <p class="text-sm font-semibold">Chief Technical Developer</p>
+              <p class="text-sm text-gray-400">Pantheon</p>
+            </div>
+            <div class="speaker-card bg-white p-4 shadow-lg rounded-lg cursor-pointer" data-name="Alice Brown"
+              data-title="Chief Marketing Officer" data-company="Specbee"
+              data-description="Monotonectally synergize business communities rather than client-centric convergence."
+              data-image="./assets/img4.png">
+              <img src="./assets/img4.png" alt="Speaker Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-xl font-bold">Alice Brown</h3>
+              <p class="text-lg font-semibold">Chief Marketing Officer</p>
+              <p class="text-sm text-gray-400">Specbee</p>
+            </div>
+
+          </div>
+          <!-- <button class="button-right text-black bg-white p-2 rounded-full">
+            <img class="w-16" src="./assets/right.png" alt="right-button">
+          </button> -->
+        </div>
+
+      </div>
+
+      <!-- Program Button -->
+      <button class="bg-blue-800 text-white px-20 py-3 rounded-xl shadow-lg hover:bg-blue-700">
+        See the Program
+      </button>
+
+      <!-- See Program -->
+      <div class="flex justify-center ml-12 w-7/12">
+        <div class="flex flex-col">
+          <p>Click here to see <br>the full program</p>
+        </div>
+        <img src="./assets/Arrow.png" alt="Arrow" class="self-end mt-10">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

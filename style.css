@@ -1,0 +1,11 @@
+.speaker-card {
+  min-width: 285px;
+  min-height: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
