@@ -25,8 +25,8 @@
       <div class="speaker-modal-content flex items-center gap-5 border-gray-200 sm:border-r-2 pr-6">
         <img src="./assets/img1.png" alt="JohnDoe" class="speaker-modal-image">
         <div class="speaker-modal-info">
-          <h2 class="speaker-modal-name text-2xl font-bold mb-2">John Doe</h2>
-          <p class="speaker-modal-position text-lg font-semibold">Chief Marketing Office</p>
+          <h2 class="speaker-modal-name sm:text-2xl text-xl font-bold mb-2">John Doe</h2>
+          <p class="speaker-modal-position text-[13px] sm:text-lg font-semibold">Chief Marketing Office</p>
           <p class="speaker-modal-company text-[16px] text-gray-400">Specbee</p>
           <div class="speaker-modal-socials flex gap-4 mt-3">
             <img src="/assets/drupal.png" class="speaker-modal-social-icon" alt="drupal">
@@ -36,7 +36,8 @@
         </div>
       </div>
       <div class="speaker-modal-bio p-5 pl-0">
-        <p>Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash
+        <p class="font-semibold sm:font-normal">Monotonectally synergize business communities rather than client-centric
+          convergence. Assertively unleash
           cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel
           infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic
           theme areas.</p>
@@ -44,143 +45,15 @@
     </section>
 
     <div class="slider relative flex items-center justify-between">
-      <div class="w-[105%] flex justify-between absolute top-[40%] -left-[20px]">
-        <button class="leftBtn bg-white p-1 rounded-full shadow-xl -ml-5">
-          <img src="/assets/left.png" alt="left" class="cursor-pointer">
-        </button>
-        <button class="rightBtn bg-white p-1 text-xl rounded-full shadow-xl">
-          <img src="/assets/right.png" alt="right" class="cursor-pointer">
-        </button>
-      </div>
+      <button class="leftBtn bg-white p-1 rounded-full shadow-xl absolute -left-[40px] top-[45%] -translate-y-2/4">
+        <img src="/assets/left.png" alt="left" class="cursor-pointer">
+      </button>
+      <button
+        class="rightBtn bg-white p-1 text-xl rounded-full shadow-xl absolute -right-[40px] top-[45%] -translate-y-2/4	">
+        <img src="/assets/right.png" alt="right" class="cursor-pointer">
+      </button>
       <section class="speakers-grid flex items-center justify-center gap-5 my-10 -ml-5 overflow-x-scroll">
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Doe" data-title="Chief Marketing Officer" data-company="Acme Corp"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
-            data-image="./assets/img1.png">
-            <img src="/assets/img1.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Doe</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acme Corp</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Smith" data-title="Chief Engagement Officer" data-company="Acquia" data-description="Monotonectally synergize business communities rather than client-centric convergence,
-            Synergistically monetize parallel infomediaries whereas 2.0 mindshare." data-image="./assets/img2.png">
-            <img src="/assets/img2.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Smith</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Engagement Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acquia</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Snow" data-title="Chief Technical Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage."
-            data-image="./assets/img3.png">
-            <img src="/assets/img3.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Snow</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Technical Developer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Pantheon</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Elia" data-title="Chief Marketing Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence."
-            data-image="./assets/img4.png">
-            <img src="/assets/img4.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Elia</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Specbee</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Doe" data-title="Chief Marketing Officer" data-company="Acme Corp"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
-            data-image="./assets/img1.png">
-            <img src="/assets/img1.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Doe</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acme Corp</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Smith" data-title="Chief Engagement Officer" data-company="Acquia" data-description="Monotonectally synergize business communities rather than client-centric convergence,
-            Synergistically monetize parallel infomediaries whereas 2.0 mindshare." data-image="./assets/img2.png">
-            <img src="/assets/img2.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Smith</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Engagement Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acquia</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Snow" data-title="Chief Technical Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage."
-            data-image="./assets/img3.png">
-            <img src="/assets/img3.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Snow</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Technical Developer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Pantheon</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Elia" data-title="Chief Marketing Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence."
-            data-image="./assets/img4.png">
-            <img src="/assets/img4.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Elia</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Specbee</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Doe" data-title="Chief Marketing Officer" data-company="Acme Corp"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas."
-            data-image="./assets/img1.png">
-            <img src="/assets/img1.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Doe</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acme Corp</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Smith" data-title="Chief Engagement Officer" data-company="Acquia" data-description="Monotonectally synergize business communities rather than client-centric convergence,
-            Synergistically monetize parallel infomediaries whereas 2.0 mindshare." data-image="./assets/img2.png">
-            <img src="/assets/img2.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Smith</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Engagement Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Acquia</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Snow" data-title="Chief Technical Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage."
-            data-image="./assets/img3.png">
-            <img src="/assets/img3.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Snow</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Technical Developer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Pantheon</p>
-          </div>
-        </article>
-        <article class="speaker-card flex items-center justify-between gap-5">
-          <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
-            data-name="John Elia" data-title="Chief Marketing Developer" data-company="Pantheon"
-            data-description="Monotonectally synergize business communities rather than client-centric convergence."
-            data-image="./assets/img4.png">
-            <img src="/assets/img4.png" alt="JohnDoe" class="speaker-card-image">
-            <h2 class="speaker-card-name font-bold text-2xl mb-2">John Elia</h2>
-            <p class="speaker-card-position text-lg font-semibold">Chief Marketing Officer</p>
-            <p class="speaker-card-company text-sm text-gray-400">Specbee</p>
-          </div>
+        <article class="speaker-card sm:hidden flex items-center justify-between gap-5">
         </article>
       </section>
     </div>
