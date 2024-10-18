@@ -16,7 +16,7 @@ const data = [
     name: "John Doe",
     title: "Chief Marketing Officer",
     company: "Acme Corp",
-    img: "http://127.0.0.1:5500/assets/img1.png",
+    img: "./assets/img1.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.",
   },
@@ -24,7 +24,7 @@ const data = [
     name: "John Smith",
     title: "Chief Engagement Officer",
     company: "Acquia",
-    img: "http://127.0.0.1:5500/assets/img2.png",
+    img: "./assets/img2.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence,Synergistically monetize parallel infomediaries whereas 2.0 mindshare",
   },
@@ -32,7 +32,7 @@ const data = [
     name: "John Snow",
     title: "Chief Technical Developer",
     company: "Pantheon",
-    img: "http://127.0.0.1:5500/assets/img3.png",
+    img: "./assets/img3.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage.",
   },
@@ -40,7 +40,7 @@ const data = [
     name: "John Elia",
     title: "Chief Marketing Developer",
     company: "Specbee",
-    img: "http://127.0.0.1:5500/assets/img4.png",
+    img: "./assets/img4.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence.",
   },
@@ -48,7 +48,7 @@ const data = [
     name: "John Doe",
     title: "Chief Marketing Officer",
     company: "Acme Corp",
-    img: "http://127.0.0.1:5500/assets/img1.png",
+    img: "./assets/img1.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.",
   },
@@ -56,7 +56,7 @@ const data = [
     name: "John Smith",
     title: "Chief Engagement Officer",
     company: "Acquia",
-    img: "http://127.0.0.1:5500/assets/img2.png",
+    img: "./assets/img2.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence,Synergistically monetize parallel infomediaries whereas 2.0 mindshare",
   },
@@ -64,7 +64,7 @@ const data = [
     name: "John Snow",
     title: "Chief Technical Developer",
     company: "Pantheon",
-    img: "http://127.0.0.1:5500/assets/img3.png",
+    img: "./assets/img3.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage.",
   },
@@ -72,7 +72,7 @@ const data = [
     name: "John Elia",
     title: "Chief Marketing Developer",
     company: "Specbee",
-    img: "http://127.0.0.1:5500/assets/img4.png",
+    img: "./assets/img4.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence.",
   },
@@ -80,7 +80,7 @@ const data = [
     name: "John Doe",
     title: "Chief Marketing Officer",
     company: "Acme Corp",
-    img: "http://127.0.0.1:5500/assets/img1.png",
+    img: "./assets/img1.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence, Assertively unleash cross-platform best practices rather than pandemic total linkage, Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.",
   },
@@ -88,7 +88,7 @@ const data = [
     name: "John Smith",
     title: "Chief Engagement Officer",
     company: "Acquia",
-    img: "http://127.0.0.1:5500/assets/img2.png",
+    img: "./assets/img2.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence,Synergistically monetize parallel infomediaries whereas 2.0 mindshare",
   },
@@ -96,7 +96,7 @@ const data = [
     name: "John Snow",
     title: "Chief Technical Developer",
     company: "Pantheon",
-    img: "http://127.0.0.1:5500/assets/img3.png",
+    img: "./assets/img3.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage.",
   },
@@ -104,7 +104,7 @@ const data = [
     name: "John Elia",
     title: "Chief Marketing Developer",
     company: "Specbee",
-    img: "http://127.0.0.1:5500/assets/img4.png",
+    img: "./assets/img4.png",
     description:
       "Monotonectally synergize business communities rather than client-centric convergence.",
   },
