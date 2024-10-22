@@ -1,4 +1,8 @@
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }
   .customGrid {
     display: flex;
     flex-direction: column;
@@ -7,5 +11,44 @@
   .speaker-modal-content {
     border-bottom: 1px solid lightgray;
     padding-bottom: 20px;
+    border-right: none;
+  }
+  .speaker-modal-name {
+    font-size: 24px;
+  }
+  .speaker-modal-position {
+    font-size: 13px;
+  }
+  .speaker-modal-bio {
+    font-weight: 400;
+  }
+  .speaker-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .program-info {
+    width: 34%;
+    margin-top: 20px;
+  }
+  .arrow-container {
+    width: 90%;
+  }
+  .leftBtn {
+    left: -10px;
+  }
+
+  .rightBtn {
+    right: -10px;
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    padding: 0 90px;
+  }
+  .speakers-grid {
+    margin-left: -10px;
   }
 }

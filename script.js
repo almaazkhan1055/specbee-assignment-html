@@ -114,16 +114,10 @@ const speakersGrid = document.querySelector(".speakers-grid");
 
 data.forEach((obj) => {
   const card = document.createElement("article");
-  card.classList.add(
-    "speaker-card",
-    "flex",
-    "items-center",
-    "justify-between",
-    "gap-5"
-  );
+  card.classList.add("speaker-card");
 
   card.innerHTML = `
-    <div class="speaker-card-content bg-white flex flex-col items-center rounded-lg p-5 shadow-xl"
+    <div class="speaker-card-content"
       data-name="${obj.name}"
       data-title="${obj.title}"
       data-company="${obj.company}"

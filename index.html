@@ -11,59 +11,53 @@
 </head>
 
 <body>
-  <div class="sm:px-[90px] px-10 mb-5">
-    <header class="section-header text-center my-10 ">
-      <h1 class="section-header-title text-4xl font-bold">View our Featured Speakers for the Event</h1>
-      <p class="section-header-description text-lg">Speakers are core contributors and industry thought leaders working
-        at <span class="text-[#003FB4]">companies</span>
+  <div class="wrapper">
+    <header class="section-header">
+      <h1 class="section-header-title">View our Featured Speakers for the Event</h1>
+      <p class="section-header-description">Speakers are core contributors and industry thought leaders working
+        at <span class="highlight">companies</span>
         that push for
         innovation.</p>
     </header>
-    <section class="speaker-modal hidden relative py-10 shadow-xl rounded-lg ">
-      <button
-        class="speaker-modal-close absolute top-4 right-4 font-semibold hover:text-gray-700 text-2xl">&times;</button>
-      <div class="speaker-modal-content flex items-center gap-5 border-gray-200 sm:border-r-2 pr-6">
+    <section class="speaker-modal">
+      <button class="speaker-modal-close">&times;</button>
+      <div class="speaker-modal-content">
         <img src="./assets/img1.png" alt="JohnDoe" class="speaker-modal-image">
         <div class="speaker-modal-info">
-          <h2 class="speaker-modal-name sm:text-2xl text-xl font-bold mb-2">John Doe</h2>
-          <p class="speaker-modal-position text-[13px] sm:text-lg font-semibold">Chief Marketing Office</p>
-          <p class="speaker-modal-company text-[16px] text-gray-400">Specbee</p>
-          <div class="speaker-modal-socials flex gap-4 mt-3">
+          <h2 class="speaker-modal-name">John Doe</h2>
+          <p class="speaker-modal-position">Chief Marketing Office</p>
+          <p class="speaker-modal-company">Specbee</p>
+          <div class="speaker-modal-socials">
             <img src="/assets/drupal.png" class="speaker-modal-social-icon" alt="drupal">
             <img src="/assets/twitter.png" class="speaker-modal-social-icon" alt="twitter">
             <img src="/assets/linkedin.png" class="speaker-modal-social-icon" alt="linkedin">
           </div>
         </div>
       </div>
-      <div class="speaker-modal-bio p-5 pl-0">
-        <p class="font-semibold sm:font-normal">Monotonectally synergize business communities rather than client-centric
-          convergence. Assertively unleash
-          cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel
-          infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic
-          theme areas.</p>
+      <div class="speaker-modal-bio">
+        <p></p>
       </div>
     </section>
 
-    <div class="slider relative flex items-center justify-between">
-      <button class="leftBtn bg-white p-1 rounded-full shadow-xl absolute -left-[40px] top-[45%] -translate-y-2/4">
+    <div class="slider">
+      <button class="leftBtn">
         <img src="/assets/left.png" alt="left" class="cursor-pointer">
       </button>
-      <button
-        class="rightBtn bg-white p-1 text-xl rounded-full shadow-xl absolute -right-[40px] top-[45%] -translate-y-2/4	">
+      <button class="rightBtn">
         <img src="/assets/right.png" alt="right" class="cursor-pointer">
       </button>
-      <section class="speakers-grid flex items-center justify-center gap-5 my-10 -ml-5 overflow-x-scroll">
+      <section class="speakers-grid">
         <article class="speaker-card sm:hidden flex items-center justify-between gap-5">
         </article>
       </section>
     </div>
-    <footer class="program-footer flex items-center justify-center">
-      <button class="program-footer-button py-4 px-20 text-white bg-[#003FB4] rounded-xl">See the Program</button>
+    <footer class="program-footer">
+      <button class="program-footer-button">See the Program</button>
     </footer>
-    <div class="program-info w-6/12 text-center">
+    <div class="program-info">
       <span class="program-info-text">Click here to see <br> the full program</span>
     </div>
-    <div class="arrow-container flex items-center justify-center w-8/12">
+    <div class="arrow-container">
       <img src="assets/Arrow.png" alt="Arrow pointing downwards" class="arrow-container-image">
     </div>
   </div>
