@@ -1,11 +1,14 @@
-const closeBtn = document.querySelector(".speaker-modal-close");
-const speakerModal = document.querySelector(".speaker-modal");
+const speakersGrid = document.querySelector(".speakers-grid");
 const speakerCard = document.querySelectorAll(".speaker-card");
+const speakerModal = document.querySelector(".speaker-modal");
 const modalName = speakerModal.querySelector(".speaker-modal-name");
 const modalPosition = speakerModal.querySelector(".speaker-modal-position");
 const modalCompany = speakerModal.querySelector(".speaker-modal-company");
 const modalImage = speakerModal.querySelector(".speaker-modal-image");
 const modalDescription = speakerModal.querySelector(".speaker-modal-bio p");
+const closeBtn = document.querySelector(".speaker-modal-close");
+const leftBtn = document.querySelector(".leftBtn");
+const rightBtn = document.querySelector(".rightBtn");
 
 closeBtn.addEventListener("click", () => {
   speakerModal.classList.add("hidden");
@@ -110,19 +113,12 @@ const data = [
   },
 ];
 
-const speakersGrid = document.querySelector(".speakers-grid");
-
-data.forEach((obj) => {
+data.map((obj) => {
   const card = document.createElement("article");
   card.classList.add("speaker-card");
 
   card.innerHTML = `
-    <div class="speaker-card-content"
-      data-name="${obj.name}"
-      data-title="${obj.title}"
-      data-company="${obj.company}"
-      data-description="${obj.description}"
-      data-image="${obj.img}">
+    <div class="speaker-card-content">
       <img src="${obj.img}" alt="${obj.name}" class="speaker-card-image">
       <h2 class="speaker-card-name font-bold text-2xl mb-2">${obj.name}</h2>
       <p class="speaker-card-position text-lg font-semibold">${obj.title}</p>
@@ -143,9 +139,6 @@ data.forEach((obj) => {
     speakerModal.classList.remove("hidden");
   });
 });
-
-const leftBtn = document.querySelector(".leftBtn");
-const rightBtn = document.querySelector(".rightBtn");
 
 leftBtn.addEventListener("click", () => {
   speakersGrid.scrollBy({ left: -300, behavior: "smooth" });
